@@ -1,0 +1,21 @@
+
+.lista{
+    display: flex;
+   gap: 30%;
+   margin-top: -300px;
+  list-style: none;
+  padding-left: 600px;
+
+  
+  
+    
+  
+  }
+  
+  .lista a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    
+   
+  }
