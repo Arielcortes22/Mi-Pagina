@@ -1,0 +1,29 @@
+
+.lista{
+    display: flex;
+   gap: 15%;
+   margin-top: -200px;
+  list-style: none;
+  padding-left: 100px;
+
+  
+  
+    
+  
+  }
+  
+  .lista a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    
+   
+  }
+  .navbar{
+    background-color: #000000;
+    height: 40px;
+    margin-right: -400px;
+  
+ 
+  }
+  

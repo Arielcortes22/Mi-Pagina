@@ -1,0 +1,67 @@
+.Card {
+    border: solid 1px #000000; 
+    background-color: #979797;
+
+
+}
+.Estructura{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: solid 1px #000000; 
+    margin-top: 30px;
+
+}
+
+.btn-ir {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 250px;
+    left: 295px;
+
+}
+.Softwareimg{
+    width: 80%;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 5px 5px black;
+
+  
+}
+.Oroimg{
+    width: 300px;
+    height: 150px;
+    margin-left: 37px;
+    margin-top: -0px;
+    box-shadow: 10px 5px 5px black;
+}
+.Perfumeimg{
+    width: 300px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: -0px;
+    box-shadow: 10px 5px 5px rgb(255, 255, 255);
+}
+.btn-enviar {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 650px;
+    top: 239px;
+
+
+}
+.Card-tres{
+     border: solid 1px #000000; 
+    background-color: #979797;
+}
