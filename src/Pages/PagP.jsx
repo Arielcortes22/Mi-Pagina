@@ -5,6 +5,7 @@ import PaginaPrincipal from '../Components/PaginaPrincipal'
 function PagP() {
   return (
     <div>
+        <br />
         <Navbar/>
         <PaginaPrincipal/>
  

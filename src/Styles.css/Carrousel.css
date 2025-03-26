@@ -1,0 +1,30 @@
+.text {
+   color: rgb(122, 122, 122);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+.carrousel{
+    width: 400px;
+    height: 400px;
+    color: black;
+}
+.SueterLv{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.textodeSueter{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+.carrousel2{
+    width: 400px;
+    height: 400px;
+   
+}
+.Tenis{
+    width: 400px;
+    height: 400px;
+    margin-top: -20px;
+}

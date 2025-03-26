@@ -3,16 +3,16 @@ import '../styles.css/NavBarStyle.css';
 
 function Navbar() {
   return (
-    <div>
+    <div id='Navbar'>
       <div className='navbar'>
             <nav className='Ok'>
 
 <ul className='lista'>
-  <li><a href="#Home">Productos</a></li>
-  <li><a href="#Carrito">Carrito</a></li>
-  <li><a href="#Pagar">Pagar</a></li>
-  <li><a href="#contacto">Contacto</a></li>
-  <li><a href="#acerca de">acerca </a></li>
+  <li><a href="http://localhost:5173/PagP">Productos</a></li>
+  <li><a href="#Service">Servicios</a></li>
+  <li><a href="http://localhost:5173/Pagar">Pagar</a></li>
+  <li><a href="http://localhost:5173/Contacto">Contacto</a></li>
+  <li><a href="http://localhost:5173/Informacion">Acerca</a></li>
 
   
 </ul>

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import Logo from '../img/software.jpeg'
 import Oro from '../img/Tienda de oro.jpg'
 import Perfumes from '../img/Perfumes.jpg'
+import Ropa from '../img/Ropa.jpeg'
 
 //import Form from 'react-bootstrap/Form';
 
@@ -17,27 +18,28 @@ function PaginaPrincipal() {
 
 
   return (
-    <div>
+    <div id='PaginaPrincipal'>
+           {/*  <Link to ='/http://localhost:5173/Login'> <Button className='btn-ir'>Registrarse</Button></Link> */}
      <h1> Micro emprendemientos y autoempleos</h1>
      
-      <a className='ButtonInit' href="http://localhost:5173/Pag2"><button>Iniciar</button></a>
+
 
     <Card className='Estructura'>{/* 0 */}
     {/* 1 */}
       <Card className='Card'>
         
-  <Card.Header>Software</Card.Header>
+  <Card.Header> <h3>Software</h3> </Card.Header>
+  <br />
   <Card.Body>
-    <Button className='btn-ir'>Ir</Button>
   <Card.Img className='Softwareimg' src={Logo}/>
     </Card.Body>
       </Card>{/* 1 */}
 
     {/* 2 */}
     <Card className='Numero2'>
-  <Card.Header>Oro</Card.Header>
+  <Card.Header> <h3>Oro</h3> </Card.Header>
+  <br />
   <Card.Body>
-  <Button className='btn-enviar'>Ir</Button>
     <Card.Img className='Oroimg' src={Oro}/>
   
  </Card.Body> 
@@ -46,18 +48,31 @@ function PaginaPrincipal() {
 
   {/* 3 */}
   <Card className='Card-tres'>
-  <Card.Header>Perfumes</Card.Header>
+  <Card.Header> <h3>Perfumes</h3> </Card.Header>
+  <br />
  <Card.Body>
-  <Button className='Btn-tres'>Ir</Button>
     <Card.Img className='Perfumeimg' src={Perfumes}/>
   </Card.Body> 
 
   </Card>{/* 3 */}
-
-
+<Card className='Card-cuatro'>
+  <Card.Header> <h3>Ropa</h3> </Card.Header>
+  <Card.Body>
+  <Link to ='/Ropa'>  <Card.Img  className='Ropaimg' src={Ropa}/></Link> 
+  </Card.Body>
+  </Card>
   </Card>  {/* 0 */}
+
+  <div>
+    <Card.Footer> <h1>Informacion </h1></Card.Footer>
+    <Card.Footer> <h4>Creador :Ariel Cortes </h4></Card.Footer>
+    <Card.Footer> <h4>Telefono :(506) 6145 0362 </h4></Card.Footer>
+    <Card.Footer> <h4>Correo :  arichango0107@gmail.com </h4></Card.Footer>
+    <Card.Footer> <h4>Web : www.microemprendedoresyautoempleos.com </h4></Card.Footer>
+  </div>
    
     </div>
+    
   )
 }
 

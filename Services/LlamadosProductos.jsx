@@ -1,6 +1,6 @@
-async function GetUsers() {
+async function GetProductos() {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch('http://localhost:3000/Productos', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -18,11 +18,11 @@ async function GetUsers() {
     }
 }
 
-async function PostUsers(nombre, password,Targeta) {
+async function PostProductos(Productos,Imagen) {
     try {
-        const userData = {nombre, password, Targeta};
+        const userData = {Productos,Imagen};
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3000/Productos", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -41,12 +41,12 @@ async function PostUsers(nombre, password,Targeta) {
     }
 }
 
-async function UpdateUsers(nombre,password,Targeta, id) {
+async function UpdateProductos(id, Productos,) {
     try {
-        const userData = {nombre,password,Targeta, id };
+        const userData = { Productos,  };
 
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
-            method: 'PUT',
+        const response = await fetch(`http://localhost:3000/Productos/${id}`, {
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -64,9 +64,9 @@ async function UpdateUsers(nombre,password,Targeta, id) {
     }
 }
 
-async function DeleteUser(id) {
+async function DeleteProductos(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3000/Productos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -85,4 +85,4 @@ async function DeleteUser(id) {
 }
 
 
-export default { GetUsers, PostUsers, UpdateUsers, DeleteUser };
+export default { GetProductos, PostProductos, UpdateProductos, DeleteProductos };

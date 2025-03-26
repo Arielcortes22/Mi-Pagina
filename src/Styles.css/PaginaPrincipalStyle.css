@@ -1,14 +1,14 @@
 .Card {
-    border: solid 1px #000000; 
+
     background-color: #979797;
 
-
+    
 }
 .Estructura{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    border: solid 1px #000000; 
+    /* flex-wrap: wrap; */
+    gap: 5px;
+ 
     margin-top: 30px;
 
 }
@@ -28,7 +28,7 @@
 .Softwareimg{
     width: 80%;
     height: 80%;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 20px;
     box-shadow: 10px 5px 5px black;
 
@@ -36,17 +36,17 @@
 }
 .Oroimg{
     width: 300px;
-    height: 150px;
-    margin-left: 37px;
+    height: 300px;
+    margin-left: 5px;
     margin-top: -0px;
     box-shadow: 10px 5px 5px black;
 }
 .Perfumeimg{
-    width: 300px;
-    height: 150px;
-    margin-left: 10px;
+    width: 200px;
+    height: 300px;
+    margin-left: 5px;
     margin-top: -0px;
-    box-shadow: 10px 5px 5px rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
 }
 .btn-enviar {
     width: 30px;
@@ -62,6 +62,9 @@
 
 }
 .Card-tres{
-     border: solid 1px #000000; 
+  
     background-color: #979797;
+}
+.Card-cuatro{
+    margin-top: 5px;
 }
