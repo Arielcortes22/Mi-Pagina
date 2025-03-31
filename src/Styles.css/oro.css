@@ -1,0 +1,12 @@
+.container {
+    display: flex; /* Alinea los elementos horizontalmente */
+    flex-direction: row; /* Dirección de los elementos en fila */
+    justify-content: flex-end; /* Alinea las cards hacia la derecha */
+    align-items: flex-start; /* Alinea las cards en la parte superior */
+    gap: 20px; /* Espacio entre las cards */
+    flex-wrap: nowrap; /* Evita que las cards pasen a la siguiente línea */
+}
+  
+  .text {
+    color: white; /* Cambia el color del texto a blanco */
+  }

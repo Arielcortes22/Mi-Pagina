@@ -1,0 +1,37 @@
+.text {
+    color: rgb(122, 122, 122);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+  
+ }
+
+ .Perfume {
+     margin-left: 100px;
+     margin-top: 80px;
+ }
+ .textodePerfume{
+     color: black;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin-top: -100px;
+     margin-left: 50px;
+ }
+ .carrousel2 , .perfumeMujerOp {
+     width: 400px;
+     height: 400px;
+     color: black;
+    
+ }
+ .Tenis {
+     width: 400px;
+     height: 400px;
+     margin-top: -20px;
+ }
+ .PerfumeMujer{
+    width: 200px;
+    height: 200px;
+    margin-left: 110px;
+    margin-top: 70px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+ }
+ body{
+    background-color: rgb(121, 121, 121) !important;
+ }

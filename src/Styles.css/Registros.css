@@ -1,0 +1,31 @@
+#Registros {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: #000000; /* Fondo claro para contraste */
+}
+
+.data {
+    width: 300px; /* Ajustar el ancho del contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de tarjeta */
+}
+  
+.Registros input {
+    width: 100%; /* Hacer que los inputs ocupen todo el ancho del contenedor */
+    height: 30px; /* Reducir la altura de los inputs */
+    margin-bottom: 15px; /* Espaciado entre inputs */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente pequeño */
+}
+  
+.Registros input:focus {
+    border-color: #007bff; /* Cambiar el color del borde al enfocar */
+    outline: none; /* Eliminar el borde azul predeterminado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul al enfocar */
+}

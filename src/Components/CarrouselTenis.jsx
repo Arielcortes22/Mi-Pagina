@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Tenis from "../img/Tenis.avif";
 import TenisArriba from "../img/TenisArriba.avif";
 import TenisAtras from "../img/TenisAtras.webp";
+import TenisSuela from "../img/TenisSuela.avif";
 function CarrouselTenis() {
   return (
     <div id='CarrouselTenis'>
@@ -31,6 +32,14 @@ function CarrouselTenis() {
         </Link>
         <Carousel.Caption>
        {/* Aqui se puede agregar un texto */}         
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <Link to="/Pagar">
+        <Image className='Tenis' src={TenisSuela}/>
+        </Link>
+        <Carousel.Caption>
+         {/* Aqui se puede agregar un texto */} 
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

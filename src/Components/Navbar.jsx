@@ -9,7 +9,7 @@ function Navbar() {
 
 <ul className='lista'>
   <li><a href="http://localhost:5173/PagP">Productos</a></li>
-  <li><a href="#Service">Servicios</a></li>
+  <li><a href="http://localhost:5173/Servicios">Servicios</a></li>
   <li><a href="http://localhost:5173/Pagar">Pagar</a></li>
   <li><a href="http://localhost:5173/Contacto">Contacto</a></li>
   <li><a href="http://localhost:5173/Informacion">Acerca</a></li>

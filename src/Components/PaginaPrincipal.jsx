@@ -2,7 +2,6 @@ import React  from 'react'
 import '../Styles.css/PaginaPrincipalStyle.css'
 import { Card, Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
-import Logo from '../img/software.jpeg'
 import Oro from '../img/Tienda de oro.jpg'
 import Perfumes from '../img/Perfumes.jpg'
 import Ropa from '../img/Ropa.jpeg'
@@ -25,22 +24,15 @@ function PaginaPrincipal() {
 
 
     <Card className='Estructura'>{/* 0 */}
-    {/* 1 */}
-      <Card className='Card'>
-        
-  <Card.Header> <h3>Software</h3> </Card.Header>
-  <br />
-  <Card.Body>
-  <Card.Img className='Softwareimg' src={Logo}/>
-    </Card.Body>
-      </Card>{/* 1 */}
+  
+  
 
     {/* 2 */}
     <Card className='Numero2'>
-  <Card.Header> <h3>Oro</h3> </Card.Header>
+<Card.Header> <h3 className='TextoOro'>Oro</h3> </Card.Header> 
   <br />
   <Card.Body>
-    <Card.Img className='Oroimg' src={Oro}/>
+  <Link to="/Oro">   <Card.Img className='Oroimg' src={Oro}/> </Link>
   
  </Card.Body> 
 
@@ -48,15 +40,15 @@ function PaginaPrincipal() {
 
   {/* 3 */}
   <Card className='Card-tres'>
-  <Card.Header> <h3>Perfumes</h3> </Card.Header>
+  <Card.Header> <h3 className='TextoPerfumes'>Perfumes</h3> </Card.Header>
   <br />
  <Card.Body>
-    <Card.Img className='Perfumeimg' src={Perfumes}/>
+  <Link to="/Perfumes" > <Card.Img className='Perfumeimg' src={Perfumes}/> </Link> 
   </Card.Body> 
 
   </Card>{/* 3 */}
 <Card className='Card-cuatro'>
-  <Card.Header> <h3>Ropa</h3> </Card.Header>
+  <Card.Header> <h3 className='TextoRopa'>Ropa</h3> </Card.Header>
   <Card.Body>
   <Link to ='/Ropa'>  <Card.Img  className='Ropaimg' src={Ropa}/></Link> 
   </Card.Body>

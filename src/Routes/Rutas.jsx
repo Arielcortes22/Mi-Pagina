@@ -9,6 +9,9 @@ import AcercaPag from '../Pages/AcercaPag';
 import ContactoPag from '../Pages/ContactoPag';
 import PagarPag from '../Pages/PagarPag';
 import AdminPag from '../Pages/AdminPag';
+import PaginaPerfumes from '../Pages/PaginaPerfumes';
+import PagServicios from '../Pages/PagServicios';
+import OroPag from '../Pages/oroPag';
 
 function Rutas() {
   return (
@@ -28,6 +31,9 @@ function Rutas() {
                               <Route path="/Contacto" element={<ContactoPag/>}/>
                               <Route path="/Pagar" element={<PagarPag/>}/>
                               <Route path="/Admin" element={< AdminPag/>}/>
+                              <Route path="/Perfumes" element={<PaginaPerfumes/>}/>
+                              <Route path="/Servicios" element={<PagServicios/>}/>
+                              <Route path="/Oro" element={<OroPag/>}/>
 
                                
 

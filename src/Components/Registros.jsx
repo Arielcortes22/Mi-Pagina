@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../Styles.css/Registros.css'
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
