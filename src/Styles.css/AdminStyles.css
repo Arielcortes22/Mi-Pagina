@@ -1,15 +1,16 @@
 .Tareas2{
     margin-left: 300px;
-    margin-top: -90px;
+    margin-top: -70px;
 }
 
 .Tablaon{
-    margin-top: -100px;
+    margin-top: -10px;
 }
 .TablaAdmin {
  height: 400px;
     margin-top: -90px; /* Ajusta el margen superior */
     margin-left: 200px; /* Elimina el margen izquierdo */
     height: 100%; /* Ajusta la altura */
+    width: 600px;
     
 }

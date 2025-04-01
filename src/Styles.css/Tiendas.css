@@ -1,7 +1,27 @@
 body {
     background-color: rgb(122, 122, 122) !important;
 }
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
 .select{
     margin-top: -200px;
 }

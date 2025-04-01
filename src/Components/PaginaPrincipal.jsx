@@ -60,7 +60,7 @@ function PaginaPrincipal() {
     <Card.Footer> <h4>Creador :Ariel Cortes </h4></Card.Footer>
     <Card.Footer> <h4>Telefono :(506) 6145 0362 </h4></Card.Footer>
     <Card.Footer> <h4>Correo :  arichango0107@gmail.com </h4></Card.Footer>
-    <Card.Footer> <h4>Web : www.microemprendedoresyautoempleos.com </h4></Card.Footer>
+ 
   </div>
    
     </div>

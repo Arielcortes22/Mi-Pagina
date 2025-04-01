@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 import '../Styles.css/PagarStyles.css';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 function Pagar() {
-  // Estado para manejar los productos seleccionados y sus precios
-  const [productos] = useState([
-   
-    { nombre: 'SueterLv', precio: 5000, imagen: 'ruta-a-imagen-sueter.jpg' },
-    { nombre: 'Pantalón', precio: 400, imagen: 'ruta-a-imagen-pantalon.jpg' },
-    { nombre: 'Zapatos', precio: 1500, imagen: 'ruta-a-imagen-zapatos.jpg' },
+  const  [productos] = useState([
+    { nombre: 'SueterLv', precio:  500.000, imagen: 'ruta-a-imagen-sueter.jpg' },
+    { nombre: 'Khamrah', precio: 28.000, imagen: 'ruta-a-imagen-pantalon.jpg' },
+    { nombre: 'Zapatos', precio: 300.000, imagen: 'ruta-a-imagen-zapatos.jpg' },
   ]);
 
-  // Inicializar el carrito con todos los productos automáticamente
   const [carrito, setCarrito] = useState([...productos]);
   const [codigoDescuento, setCodigoDescuento] = useState('');
   const [metodoPago, setMetodoPago] = useState('');
   const [nuevoProducto, setNuevoProducto] = useState({ nombre: '', precio: '' });
 
-  // Función para agregar un producto manualmente al carrito
   const agregarProductoManual = (e) => {
     e.preventDefault();
     if (nuevoProducto.nombre && nuevoProducto.precio) {
@@ -27,31 +24,54 @@ function Pagar() {
       };
       setCarrito([...carrito, producto]);
       setNuevoProducto({ nombre: '', precio: '' }); // Limpiar el formulario
+      Swal.fire({
+        icon: 'success',
+        title: 'Producto agregado',
+        text: `El producto "${producto.nombre}" fue agregado al carrito.`,
+        timer: 1500,
+        showConfirmButton: false,
+      });
     } else {
-      alert('Por favor, ingresa un nombre y un precio válido.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Por favor, ingresa un nombre y un precio válido.',
+      });
     }
   };
 
-  // Calcular subtotal
   const subtotal = carrito.reduce((total, producto) => total + producto.precio, 0);
-
-  // Calcular descuento (si aplica)
   const descuento = codigoDescuento === 'DESCUENTO10' ? subtotal * 0.1 : 0;
-
-  // Calcular envío (puedes personalizarlo)
   const envio = carrito.length > 0 ? 10 : 0;
-
-  // Calcular total
   const total = subtotal - descuento + envio;
 
   const handleComprar = () => {
     if (carrito.length === 0) {
-      alert('El carrito está vacío. Agrega productos antes de comprar.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Carrito vacío',
+        text: 'El carrito está vacío. Agrega productos antes de comprar.',
+      });
       return;
     }
-    alert(`Compra realizada con éxito. Total: $${total.toFixed(2)}`);
-    console.log('Productos comprados:', carrito);
-    console.log('Método de pago:', metodoPago);
+    if (!metodoPago) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Método de pago requerido',
+        text: 'Por favor, selecciona un método de pago.',
+      });
+      return;
+    }
+    Swal.fire({
+      icon: 'success',
+      title: 'Compra realizada',
+      text: `Compra realizada con éxito. Total: $${total.toFixed(2)}`,
+      confirmButtonText: 'Aceptar',
+    }).then(() => {
+      setCarrito([]);
+      setCodigoDescuento('');
+      setMetodoPago('');
+    });
   };
 
   return (
@@ -117,6 +137,7 @@ function Pagar() {
                     <option value="BCR">BCR</option>
                     <option value="Visa">Visa</option>
                   </select>
+                  <input type="text" placeholder='Digite su targeta' />
                 </div>
                 <hr />
                 <div className="promo">
@@ -142,19 +163,17 @@ function Pagar() {
                     <span>Discount:</span>
                     <span>-${descuento.toFixed(2)}</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="card checkout">
-            <div className="footer">
+                   
               <label className="price">${total.toFixed(2)}</label>
               <button className="checkout-btn" onClick={handleComprar}>
                 Comprar
               </button>
+            
+                </div>
+              </div>
             </div>
           </div>
+        
         </div>
       </div>
     </div>
